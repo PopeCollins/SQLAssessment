@@ -26,9 +26,11 @@ Join T_Table with users_customuser Table and Make CASE for the Categories.
 # Q3
 Task: Find all active accounts (savings or investments) with no transactions in the last 1 year (365 days)
 ### QUERY 1
-Subquery that returns the transaction days and inactive days called the table n0_trans
+Create a subquery that returns only plan_id for trasaction in the last 1 year from savings_savingsaccount Table 
 ### QUERY 2
-The join query that returns the complete table 
+Join QUERY 1 with savings_savingsaccount table using Where not in
+### QUERY 3
+Join the above query with the plans_plan Table to return the complete task
 # Q4
 Task: For each customer, assuming the profit_per_transaction is 0.1% of the transaction value, calculate:
 •	Account tenure (months since signup)
